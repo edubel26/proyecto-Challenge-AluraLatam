@@ -12,7 +12,6 @@ function encriptarTexto() {
 } 
 
 
-
 function desencriptarTexto() {
     let texto = document.getElementById('textarea__placeholde').value;
     let textoEncriptar = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
@@ -20,6 +19,7 @@ function desencriptarTexto() {
     
     let parrafo = document.getElementById('textarea__mensaje__encriptado');
     parrafo.innerHTML = textoEncriptar;
+    return;
 }
 
 
