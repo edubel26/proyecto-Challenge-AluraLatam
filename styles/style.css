@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-primario: #F3F5FC;
+    --color-secundario: #FFFFFF;
+    --color-terciario: #0A3871;
+    --color-Cuarternario: #495057; 
+    --color-boton-letra: #D8DFE8 ;
+    --color-boton-letra-inverso: #0A3871;
+    --color-mensaje: #343A40;
+
+    --font-inter: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    height:100%;
+    margin: 0;
+}
+
+.container{
+    margin: 40px;
+    display: flex;
+    
+}
+
+.container__inicio{
+    width: 1000px;
+    height: 870px;
+}
+
+.container__inicio__input{
+    padding-top: 80px;
+    padding-left: 200px;
+
+}
+.container__input{
+    background-color: var(--color-primario);
+    width: 650px;
+    height: 570px;
+    border: none;
+    color: var(--color-boton-letra-inverso);
+    font-family: var(--font-inter);
+    font-size: 36px;
+    padding: 10px; 
+}
+
+#textarea__placeholde::placeholder{
+    color: var(--color-terciario);
+    font-family: var(--font-inter);
+    font-size: 36px;
+}
+.container__inicio__text{
+    color: var(--color-terciario);
+    font-family: var(--font-inter);
+    font-size: 36px;
+    padding: 10px;
+}
+
+.image{
+    width: 16px;
+    height: 16px;
+}
+
+.container__section__abertencia{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: var(--font-inter);
+    color: var(--color-Cuarternario);
+}
+
+
+.button{
+    display: flex;
+    gap: 25px;
+    padding-left: 200px;
+
+}
+
+.button__button{
+    width: 315px;
+    height: 67px;
+    font-size: 16px;
+    font-family: var(--font-inter);
+    border: 2px solid var(--color-boton-letra-inverso);
+    border-radius: 24px;
+    
+}
+
+.encriptar{
+    background-color: var(--color-boton-letra-inverso);
+    color: var(--color-boton-letra);
+    font-family: var(--font-inter);
+    font-size: 16px;
+}
+
+.desencriptar{
+    background-color: var(--color-boton-letra);
+    color: var(--color-boton-letra-inverso);
+    font-family: var(--font-inter);
+    font-size: 16px;
+}
+
+.container__secundario{
+    background-color: var(--color-secundario);
+    width: 400px;
+    height: 870px;
+    box-shadow: 2px 2px 5px  rgb(180, 180, 180);
+    border-radius: 32px;
+
+}
+
+.container__muneco{
+    width: 336px;
+    height: 304px;
+    padding: 210px 32px 0% 32px;
+}
+
+.container__texto__mensaje{
+    padding: 50px 32px 0% 32px;
+    text-align: center;
+    grid-gap: 100px;
+}
+
+.container__texto__titulo{
+    font-size: 24px;
+    font-family: var(--font-inter);
+    color: var(--color-mensaje);
+    resize: none;
+}
+textarea {
+    resize: none;
+}
+.container__texto__texto{
+    font-size: 16px;
+    font-family: var(--font-inter);
+    color: var(--color-mensaje);
+    padding-top: 10px;
+    
+}
+
+
+@media(max-width : 768px){
+
+
+    .container__inicio__logo{
+        width: 90px ;
+        height: 50px ;
+        padding-top: 73.42px;
+    }
+
+    .container__inicio__input{
+        padding-top: 90px;
+        padding-left: 0%;
+    }
+    
+    .container__input{
+        width: 650px;
+        height: 600px;
+        padding: 10px; 
+        font-size: 32px;
+        
+    }
+    
+    .button{
+        display: flex;
+        gap: 30px;
+        padding-left: 10px;
+        padding: 10px;
+    }
+    
+    .button__button{
+        width: 315px;
+        height: 67px;
+        font-size: 16px;
+        font-family: var(--font-inter);
+        border: 2px solid var(--color-boton-letra-inverso);
+        border-radius: 24px;
+        
+    }
+    
+    
+    .container__secundario{
+        background-color: var(--color-secundario);
+        width: 670px;
+        height: 123px;
+        box-shadow: 2px 2px 5px  rgb(180, 180, 180);
+        border-radius: 32px;    
+        margin-top: 180px;
+    
+    }
+    
+    .container__muneco{
+        display: none;
+    }
+    
+    .container__texto__mensaje{
+        padding: 32px 10px 10px 10px;
+        text-align: center;
+    }
+    
+
+    .container__texto__texto{
+        font-size: 16px;
+        font-family: var(--font-inter);
+        color: var(--color-mensaje);
+        padding-top: 10px;
+        
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width : 375px){
+    
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container__inicio__logo{
+        width: 105px ;
+        height: 70px ;
+    }
+
+    .button{
+      flex-direction: column;  
+    }
+    .button__button{
+        width: 343px;
+        height: 67px;
+        
+    }
+
+}
+
