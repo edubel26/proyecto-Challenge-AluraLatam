@@ -30,7 +30,7 @@ body{
 }
 
 .container__inicio{
-    width: 1000px;
+    width: 950px;
     height: 870px;
 }
 
@@ -157,6 +157,10 @@ textarea {
         padding-top: 73.42px;
     }
 
+    .container__inicio{
+        width: 650px;
+        height: 933px;
+    }
     .container__inicio__input{
         padding-top: 90px;
         padding-left: 0%;
@@ -190,11 +194,11 @@ textarea {
     
     .container__secundario{
         background-color: var(--color-secundario);
-        width: 670px;
+        width: 650px;
         height: 123px;
         box-shadow: 2px 2px 5px  rgb(180, 180, 180);
         border-radius: 32px;    
-        margin-top: 180px;
+        margin-top: 120px;
     
     }
     
@@ -227,21 +231,47 @@ textarea {
 
     .container{
         flex-direction: column;
+        margin: 16px;
     }
 
+    .container__inicio{
+        width: 340px;
+        height: 870px;
+    }
+    
     .container__inicio__logo{
-        width: 105px ;
-        height: 70px ;
+        width: 90px ;
+        height: 50px ;
+        padding-top: 16px ;
     }
 
     .button{
       flex-direction: column;  
     }
+
     .button__button{
-        width: 343px;
-        height: 67px;
+        width: 315px;
+        height: 67px;  
+    }
+
+    .container__inicio__input{
+        padding-top: 70px;
+        padding-left: 0%;
+    }
+
+    .container__input{
+        width: 290px;
+        height: 400px;
+        font-size: 32px;
         
     }
 
+    .container__secundario{
+        width: 349px;
+        height: 170px;
+        box-shadow: 2px 2px 5px  rgb(180, 180, 180);
+        border-radius: 32px;    
+        margin-top: 0.1px;
+    }
 }
 
