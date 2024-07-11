@@ -1,6 +1,6 @@
 <h1>Proyecto Challenge  Alura Latam</h1>
 
-- Estado de proyecto: en construcción 
+- Estado de proyecto: Finalizado  
 
 - Se realiza la implementación del front-end
 
